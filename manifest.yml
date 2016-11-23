@@ -1,0 +1,11 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: talent-manager-ipsen
+  host: talent-manager-ipsen
+  disk_quota: 1024M
+  services:
+  - talent-manager-db
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
